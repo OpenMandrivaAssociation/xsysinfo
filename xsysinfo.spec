@@ -44,7 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
 [Desktop Entry]
-Encoding=UTF-8
 Name=Xsysinfo
 Comment=System information
 Exec=%{_bindir}/%{name} 
