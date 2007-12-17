@@ -16,7 +16,6 @@ Patch0:		xsysinfo-imake.patch.bz2
 Patch1:		xsysinfo-1.7-xf4.patch.bz2
 Patch2:		xsysinfo-1.7-includes.patch.bz2
 BuildRequires:	imake libx11-devel libxext-devel libxaw-devel libxmu-devel libxt-devel libxp-devel xpm-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Xsysinfo is a graphic kernel monitoring tool for the X Window System.
