@@ -1,10 +1,9 @@
 %define name	xsysinfo
 %define version	1.7
-%define release	%mkrel 18
 Summary:	An X Window System kernel parameter monitoring tool
 Name:		%{name}
 Version:	%{version}
-Release:	%{release}
+Release:	%mkrel 19
 License:	MIT
 Group:		Monitoring
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/xsysinfo-%{version}.tar.bz2
