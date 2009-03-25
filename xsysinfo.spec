@@ -3,7 +3,7 @@
 Summary:	An X Window System kernel parameter monitoring tool
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 21
+Release:	%mkrel 23
 License:	MIT
 Group:		Monitoring
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/xsysinfo-%{version}.tar.bz2
@@ -11,9 +11,9 @@ Source1:	%{name}
 Source11:	%{name}-16x16.png
 Source12:	%{name}-32x32.png
 Source13:	%{name}-48x48.png
-Patch0:		xsysinfo-imake.patch.bz2
-Patch1:		xsysinfo-1.7-xf4.patch.bz2
-Patch2:		xsysinfo-1.7-includes.patch.bz2
+Patch0:		xsysinfo-1.7-imake.patch
+Patch1:		xsysinfo-1.7-xf4.patch
+Patch2:		xsysinfo-1.7-includes.patch
 BuildRequires:	imake libx11-devel libxext-devel libxaw-devel libxmu-devel libxt-devel libxp-devel xpm-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
