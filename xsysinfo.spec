@@ -34,7 +34,7 @@ make clean
 
 %build
 xmkmf
-%make CDEBUGFLAGS="%optflags"
+%make CDEBUGFLAGS="%optflags" EXTRA_LDOPTIONS="%ldflags"
 
 %install
 rm -rf $RPM_BUILD_ROOT
