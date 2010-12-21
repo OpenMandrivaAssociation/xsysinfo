@@ -14,7 +14,12 @@ Source13:	%{name}-48x48.png
 Patch0:		xsysinfo-1.7-imake.patch
 Patch1:		xsysinfo-1.7-xf4.patch
 Patch2:		xsysinfo-1.7-includes.patch
-BuildRequires:	imake libx11-devel libxext-devel libxaw-devel libxmu-devel libxt-devel libxp-devel xpm-devel
+BuildRequires:	imake
+BuildRequires:	libx11-devel
+BuildRequires:	Xaw3d-devel
+BuildRequires:	libxt-devel
+BuildRequires:	libxaw-devel
+BuildRequires:	libxp-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
