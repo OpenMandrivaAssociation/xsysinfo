@@ -42,7 +42,7 @@ xmkmf
 %make CDEBUGFLAGS="%optflags" EXTRA_LDOPTIONS="%ldflags"
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %{makeinstall_std}
 
 mkdir -p %{buildroot}%{_datadir}/applications
@@ -58,14 +58,14 @@ StartupNotify=true
 Categories=System;Monitor;X-MandrivaLinux-System-Monitoring;
 EOF
 
-install -m644 %{SOURCE11} -D $RPM_BUILD_ROOT%{_miconsdir}/%{name}.png
-install -m644 %{SOURCE11} -D $RPM_BUILD_ROOT%{_iconsdir}/hicolor/16x16/apps/%{name}.png
-install -m644 %{SOURCE12} -D $RPM_BUILD_ROOT%{_iconsdir}/%{name}.png
-install -m644 %{SOURCE12} -D $RPM_BUILD_ROOT%{_iconsdir}/hicolor/32x32/apps/%{name}.png
-install -m644 %{SOURCE13} -D $RPM_BUILD_ROOT%{_liconsdir}/%{name}.png
-install -m644 %{SOURCE13} -D $RPM_BUILD_ROOT%{_iconsdir}/hicolor/48x48/apps/%{name}.png
+install -m644 %{SOURCE11} -D %{buildroot}%{_miconsdir}/%{name}.png
+install -m644 %{SOURCE11} -D %{buildroot}%{_iconsdir}/hicolor/16x16/apps/%{name}.png
+install -m644 %{SOURCE12} -D %{buildroot}%{_iconsdir}/%{name}.png
+install -m644 %{SOURCE12} -D %{buildroot}%{_iconsdir}/hicolor/32x32/apps/%{name}.png
+install -m644 %{SOURCE13} -D %{buildroot}%{_liconsdir}/%{name}.png
+install -m644 %{SOURCE13} -D %{buildroot}%{_iconsdir}/hicolor/48x48/apps/%{name}.png
 
-rm -f $RPM_BUILD_ROOT/%{_prefix}/lib/X11/app-defaults
+rm -f %{buildroot}/%{_prefix}/lib/X11/app-defaults
 
 %if %mdkversion < 200900
 %post
@@ -80,7 +80,7 @@ rm -f $RPM_BUILD_ROOT/%{_prefix}/lib/X11/app-defaults
 %endif
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
