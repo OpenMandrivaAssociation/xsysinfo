@@ -1,0 +1,10 @@
+--- Imakefile	Tue May 23 21:43:36 2000
++++ Imakefile.xf4	Tue May 23 21:43:18 2000
+@@ -38,6 +38,6 @@
+ SRCS = BarGauge.c sysinfo.c xsysinfo.c 
+ OBJS = $(SRCS:.c=.o)
+ 
+-ComplexProgramTarget(xsysinfo)
++ComplexProgramTargetNoMan(xsysinfo)
+ InstallAppDefaults(XSysinfo)
+ InstallAppDefaults(XSysinfo-color)

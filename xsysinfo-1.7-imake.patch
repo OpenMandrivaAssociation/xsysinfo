@@ -1,0 +1,12 @@
+diff -Naur --exclude '*.orig' xsysinfo-1.7/Imakefile xsysinfo-1.7-imake/Imakefile
+--- xsysinfo-1.7/Imakefile	1997-10-08 13:14:14.000000000 +0200
++++ xsysinfo-1.7-imake/Imakefile	2009-03-25 22:14:59.000000000 +0100
+@@ -32,7 +32,7 @@
+  */
+ EXTRA_DEFINES += -DUSE_MILLI_SECONDS
+ 
+-LOCAL_LIBRARIES = XawClientLibs
++LOCAL_LIBRARIES = XawClientLibs -L/usr/X11R6/lib
+ DEPLIBS=
+ 
+ SRCS = BarGauge.c sysinfo.c xsysinfo.c 
