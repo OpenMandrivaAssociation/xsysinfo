@@ -1,0 +1,7 @@
+?package(xsysinfo):\
+	needs="X11"\
+	section="Applications/Monitoring"\
+	title="Xsysinfo"\
+	longtitle="System information"\
+	command="/usr/X11R6/bin/xsysinfo"\
+	icon="xsysinfo.xpm"
