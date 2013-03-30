@@ -3,7 +3,7 @@
 Summary:	An X Window System kernel parameter monitoring tool
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 29
+Release:	30
 License:	MIT
 Group:		Monitoring
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/xsysinfo-%{version}.tar.bz2
@@ -19,7 +19,6 @@ BuildRequires:	libx11-devel
 BuildRequires:	Xaw3d-devel
 BuildRequires:	libxt-devel
 BuildRequires:	libxaw-devel
-BuildRequires:	libxp-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
