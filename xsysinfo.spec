@@ -3,7 +3,7 @@
 Summary:	An X Window System kernel parameter monitoring tool
 Name:		%{name}
 Version:	%{version}
-Release:	30
+Release:	31
 License:	MIT
 Group:		Monitoring
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/xsysinfo-%{version}.tar.bz2
@@ -19,7 +19,6 @@ BuildRequires:	pkgconfig(x11)
 BuildRequires:	Xaw3d-devel
 BuildRequires:	pkgconfig(xt)
 BuildRequires:	pkgconfig(xaw7)
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Xsysinfo is a graphic kernel monitoring tool for the X Window System.
