@@ -15,10 +15,10 @@ Patch0:		xsysinfo-1.7-imake.patch
 Patch1:		xsysinfo-1.7-xf4.patch
 Patch2:		xsysinfo-1.7-includes.patch
 BuildRequires:	imake
-BuildRequires:	libx11-devel
+BuildRequires:	pkgconfig(x11)
 BuildRequires:	Xaw3d-devel
-BuildRequires:	libxt-devel
-BuildRequires:	libxaw-devel
+BuildRequires:	pkgconfig(xt)
+BuildRequires:	pkgconfig(xaw7)
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
