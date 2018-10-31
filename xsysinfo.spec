@@ -3,7 +3,7 @@
 Summary:	An X Window System kernel parameter monitoring tool
 Name:		%{name}
 Version:	%{version}
-Release:	39
+Release:	40
 License:	MIT
 Group:		Monitoring
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/xsysinfo-%{version}.tar.bz2
@@ -148,7 +148,7 @@ rm -rf $RPM_BUILD_ROOT
 * Wed Dec 07 2005 Lenny Cartier <lenny@mandriva.com> 1.7-17mdk
 - rebuild
 
-* Tue Jun 29 2004 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 1.7-16mdk
+* Tue Jun 29 2004 Per Ã˜yvind Karlsen <peroyvind@linux-mandrake.com> 1.7-16mdk
 - fix unpackaged files
 - convert icons to png
 - generate menu during %%install in stead
@@ -161,7 +161,7 @@ rm -rf $RPM_BUILD_ROOT
 - Macroize the %%config files
 - Clean spec file
 
-* Sun Jul 13 2003 Per Øyvind Karlsen <peroyvind@sintrax.net> 1.7-13mdk
+* Sun Jul 13 2003 Per Ã˜yvind Karlsen <peroyvind@sintrax.net> 1.7-13mdk
 - macroize
 - fix unpackaged files
 
