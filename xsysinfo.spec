@@ -3,7 +3,7 @@
 Summary:	An X Window System kernel parameter monitoring tool
 Name:		%{name}
 Version:	%{version}
-Release:	40
+Release:	41
 License:	MIT
 Group:		Monitoring
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/xsysinfo-%{version}.tar.bz2
@@ -84,8 +84,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc README CHANGES
 %{_bindir}/xsysinfo
-%config(noreplace) %{_sysconfdir}/X11/app-defaults/XSysinfo
-%config(noreplace) %{_sysconfdir}/X11/app-defaults/XSysinfo-color
+%{_datadir}/X11/app-defaults/XSysinfo
+%{_datadir}/X11/app-defaults/XSysinfo-color
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
