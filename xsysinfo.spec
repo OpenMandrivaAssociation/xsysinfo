@@ -3,7 +3,7 @@
 Summary:	An X Window System kernel parameter monitoring tool
 Name:		%{name}
 Version:	%{version}
-Release:	41
+Release:	42
 License:	MIT
 Group:		Monitoring
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/xsysinfo-%{version}.tar.bz2
